@@ -1,0 +1,82 @@
+[
+	{
+		"bindings": {
+			"cmd-shift-e": "project_panel::ToggleFocus",
+			"cmd-t": "workspace::ToggleBottomDock",
+			"; b": "workspace::ToggleLeftDock",
+			"f f": "file_finder::Toggle",
+			"f s": "workspace::NewSearch",
+			"f g": "git_panel::ToggleFocus"
+		}
+	},
+	{
+		"context": "Dock",
+		"bindings": {
+			"ctrl-h": "workspace::ActivatePaneLeft",
+			"ctrl-l": "workspace::ActivatePaneRight",
+			"ctrl-k": "workspace::ActivatePaneUp",
+			"ctrl-j": "workspace::ActivatePaneDown"
+		}
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"ctrl-tab": "tab_switcher::Toggle"
+		}
+	},
+	{
+		"context": "ProjectPanel && not_editing",
+		"bindings": {
+			"j": "menu::SelectNext",
+			"k": "menu::SelectPrevious",
+			"l": "project_panel::Open",
+			"h": "project_panel::CollapseSelectedEntry",
+			"a": "project_panel::NewFile",
+			"c": "project_panel::Copy",
+			"p": "project_panel::Paste",
+			"r": "project_panel::Rename",
+			"d": "project_panel::Delete",
+			"shift-p": "workspace::CopyRelativePath",
+			"shift-a": "project_panel::NewDirectory",
+			"shift-h": "project_panel::CollapseAllEntries"
+		}
+	},
+	{
+		"context": "Editor && VimControl && !VimWaiting && !menu",
+		"bindings": {
+			"] e": "editor::GoToDiagnostic",
+			"[ e": "editor::GoToPreviousDiagnostic",
+			"ctrl-h": "workspace::ActivatePaneLeft",
+			"ctrl-l": "workspace::ActivatePaneRight",
+			"ctrl-k": "workspace::ActivatePaneUp",
+			"ctrl-j": "workspace::ActivatePaneDown"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == normal",
+		"bindings": {
+			"shift-k": "editor::Hover",
+			"ctrl-r": "editor::FindAllReferences",
+			"ctrl-t": "editor::GoToTypeDefinition",
+			"ctrl-i": "editor::GoToImplementation",
+			"ctrl-o": "editor::GoToDefinition",
+			"; r r": "editor::Rename",
+			", s": "pane::SplitRight",
+			"; shift-h": "editor::ToggleSelectedDiffHunks",
+			"; shift-r": "git::Restore"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == insert",
+		"bindings": {
+			"ctrl-[": "vim::NormalBefore"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == normal",
+		"bindings": {
+			"; s": "workspace::Save",
+			"; w": "pane::CloseActiveItem"
+		}
+	}
+]

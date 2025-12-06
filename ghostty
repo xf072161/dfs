@@ -1,0 +1,27 @@
+font-family = "MonoLisa Regular"
+font-feature = -liga
+font-feature = -calt
+font-size = 14.5
+
+background = 151317
+foreground = D3CEBA
+cursor-color = D3CEBA
+cursor-style = block
+cursor-style-blink = false
+
+window-save-state = always
+window-inherit-working-directory=true
+window-padding-balance=true
+window-padding-color=extend
+window-decoration=true
+macos-titlebar-style = tabs
+shell-integration-features = no-cursor
+confirm-close-surface=false
+adjust-cell-height=6
+
+keybind = cmd+shift+[=previous_tab
+keybind = cmd+shift+]=next_tab
+keybind = cmd+[=goto_split:left
+keybind = cmd+]=goto_split:right
+keybind = ctrl+tab=text:\x1b[9;5u
+keybind = ctrl+shift+tab=ignore

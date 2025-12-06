@@ -1,0 +1,12 @@
+brew "htop"
+brew "neovim"
+brew "ripgrep"
+brew "jq"
+brew "jo"
+brew "go"
+brew "buf"
+brew "fzf"
+
+cask "ghostty"
+cask "spotify"
+cask "zed"
